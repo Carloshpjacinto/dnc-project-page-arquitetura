@@ -1,5 +1,6 @@
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
+import Button from '../components/button/button'
 
 function Home() {
 
@@ -7,8 +8,7 @@ function Home() {
 
         <>
             <Header/>
-            <h1>Home</h1>
-            <p>Subtitle home</p>
+            <Button buttonStyle={"outline"} arrow>clique aqui</Button>
             <Footer/>
         </>
 
