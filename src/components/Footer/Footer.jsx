@@ -94,9 +94,9 @@ function Footer() {
 
                     <div>
 
-                        <img src={BrazilIcon} height="29px"/>
+                        <img src={BrazilIcon}/>
 
-                        <img src={UsaIcon} height="29px"/>
+                        <img src={UsaIcon}/>
 
                     </div>
                 </div>

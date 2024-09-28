@@ -12,9 +12,9 @@ function Hero(){
         <div className="hero d-flex al-center">
             <div className="hero-text">
 
-                <h1>Título Principal em inglês</h1>
+                <h1>Let Your Home Be Unique</h1>
 
-                <p>Texto explicando sobre a aplicação</p>
+                <p>There are many variations of the passages of lorem Ipsum fromavailable, majority</p>
 
                 <Link to="/about">
 

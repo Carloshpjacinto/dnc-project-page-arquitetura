@@ -72,7 +72,26 @@ footer .social-links a{
 
 }
 
+.footer-copy img{
+
+    width: 29px;
+    margin: 0rem .625rem 0rem 0rem;
+
+}
+
+.footer-copy img:last-child{
+
+    margin: 0;
+    
+}
+
 @media (max-width: 768px){
+
+    footer{
+
+        flex-direction: column;
+        
+    }
     
     .footer-col{
 

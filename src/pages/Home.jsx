@@ -1,8 +1,7 @@
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import Button from '../components/button/button'
-import Banner from '../components/banner/Banner'
 import Hero from '../components/hero/Hero'
+import ProjectsList from '../components/projectsList/ProjectsList'
 
 function Home() {
 
@@ -10,9 +9,19 @@ function Home() {
 
         <>
             <Header/>
-            <div className='container'>
-                <Hero></Hero>
-            </div>
+
+            <main>
+
+                <div className='container'>
+
+                    <Hero></Hero>
+
+                    <ProjectsList/>
+
+                </div>
+
+            </main>
+            
             <Footer/>
         </>
 
