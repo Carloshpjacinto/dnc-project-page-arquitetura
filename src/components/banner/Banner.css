@@ -1,15 +1,21 @@
-.banner {
+.banner{
+
     background-position: center;
     background-size: cover;
     height: 356px;
     width: 100%;
+    background-color: #ccc;
+
 }
 
-.title-panel {
+.titlePanel{
+
     background-color: white;
-    border-radius: 37px 37px 0 0;
+    border-radius: 10px 10px 0 0;
     font-size: 50px;
     height: 150px;
     margin: 0 auto;
     max-width: 500px;
+
 }
+

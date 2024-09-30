@@ -1,18 +1,30 @@
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import Hero from '../components/Hero/Hero'
-import ProjectsLists from '../components/ProjectsLists/ProjectsLists'
+import Hero from '../components/hero/Hero'
+import ProjectsList from '../components/projectsList/ProjectsList'
 
 function Home() {
-    return (
+
+    return(
+
         <>
-            <Header />
-            <div className="container">
-                <Hero />
-                <ProjectsLists />
-            </div>
-            <Footer />
+            <Header/>
+
+            <main>
+
+                <div className='container'>
+
+                    <Hero></Hero>
+
+                    <ProjectsList/>
+
+                </div>
+
+            </main>
+            
+            <Footer/>
         </>
+
     )
 }
 

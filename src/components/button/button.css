@@ -1,58 +1,69 @@
-.button {
-  border-radius: 18px;
-  border: none;
-  column-gap: 10px;
-  cursor: pointer;
-  display: flex;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 25px 50px;
-  transition: background-color 0.3s ease;
+button{
+
+    border-radius: 18px;
+    border: none;
+    column-gap: 10px;
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 25px 50px;
+    transition: background-color 0.3 ease;
+
 }
 
-/* Primary */
-.button.primary {
-  background-color: #0C70F2;
-  color: white;
+.button.primary{
+
+    background-color: #0cc0f2;
+    color: white;
+
 }
 
-.button.primary:hover {
-  background-color: #0056b3;
+    .button.primary:hover{
+
+        background-color: #0056B3;
+
+    }
+
+.button.secondary{
+
+    background-color: #1D1D1D;
+    color: white;
+
 }
 
-/* Secondary */
-.button.secondary {
-  background-color: #1D1D1D;
-  color: white;
+    .button.secondary:hover{
+
+        background-color: #4D4D4D;
+
+    }
+
+.button.outline{
+
+    background-color: white;
+    color: #0cc0f2;
+    border: 2px solid #0cc0f2;
+
 }
 
-.button.secondary:hover {
-  background-color: #4D5053;
+    .button.outline:hover{
+
+        background-color: #0cc0f2;
+        color: white;
+
+    }
+
+button:disabled, .button.disabled{
+
+    background-color: #CCCCCC;
+    color: #666666;
+    cursor: not-allowed;
+
 }
 
-/* Outline */
-.button.outline {
-  background-color: white;
-  border: 2px solid #0C70F2;
-  color: #0C70F2;
-}
+    button:disabled:hover, .button.disabled:hover{
 
-.button.outline:hover {
-  background-color: #0C70F2;
-  color: white;
-}
-
-/* Unstyled */
-.button.unstyled {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Disabled */
-.button:disabled, .button:disabled>:hover {
-  background: #ccc;
-  color: #666;
-  pointer-events: none;
-}
+        background-color: #CCCCCC;
+    
+    }
+    
