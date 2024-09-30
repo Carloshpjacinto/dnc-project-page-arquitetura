@@ -1,24 +1,21 @@
-import Header from "../components/Header/Header"
-import Footer from "../components/Footer/Footer"
-import Banner from "../components/Banner/Banner"
-import AboutText from "../components/AboutText/AboutText"
+import { useContext } from 'react'
+import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
+import Banner from '../components/Banner/Banner'
+import AboutText from '../components/AboutText/AboutText'
 
-function About(){
+// CONTEXTS
+import { AppContext } from '../contexts/AppContext'
 
-    return(
-
-        <>
-            <Header/>
-
-            <Banner image="aboutUs.svg" title="About Us"/>
-
-            <div>
-                <AboutText/>
-            </div>
-
-            <Footer/>
+function About() {
+    const appContext = useContext(AppContext)
+    return (
+        <>  
+            <Header />
+            <Banner image="about-bg.jpg" title={appContext.languages[appContext.language].menu.about} />
+            <AboutText />
+            <Footer />
         </>
-
     )
 }
 

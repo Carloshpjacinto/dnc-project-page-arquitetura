@@ -1,26 +1,23 @@
+import { useContext } from 'react'
+
+// COMPONENTS
+import ContactForm from '../components/ContactForm/ContactForm'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import Banner from '../components/banner/Banner'
-import ContactForm from '../components/contactForm/ContactForm'
+import Banner from '../components/Banner/Banner'
+
+// CONTEXTS
+import { AppContext } from '../contexts/AppContext'
 
 function Contact() {
-
-    return(
-
+    const appContext = useContext(AppContext)
+    return (
         <>
-            <Header/>
-
-            <Banner image="contact.svg" title="contact"/>
-
-            <main className='container'>
-
-                <ContactForm/>
-                
-            </main>
-            
-            <Footer/>
+            <Header />
+            <Banner image="contact-bg.jpg" title={appContext.languages[appContext.language].menu.contact} />
+            <ContactForm />
+            <Footer />
         </>
-
     )
 }
 

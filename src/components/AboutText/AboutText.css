@@ -1,33 +1,22 @@
-.text-section{
-
+.text-section {
     column-gap: 97px;
     margin: 160px auto;
-
 }
 
-.text-section-text{
-
+.text-section-text {
     flex: 1;
-
 }
 
-.text-section-text h2{
-
+.text-section-text h2 {
     font-size: 50px;
-
 }
 
-.text-section-text p{
-
+.text-section-text p {
     font-size: 25px;
-
 }
 
 @media (max-width: 768px) {
-    
-    .text-section{
-
+    .text-section {
         flex-direction: column;
-
     }
 }
