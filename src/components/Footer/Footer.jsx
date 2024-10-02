@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
 
 //CSS
 import './Footer.css'
@@ -12,7 +13,21 @@ import LinkedinIcon from '../../assets/linkedin-icon.svg'
 import InstagramIcon from '../../assets/instagram-icon.svg'
 import Twittericon from '../../assets/twitter-icon.svg'
 
+//COMPONENT
+import Button from "../button/button";
+
+//CONTEXT
+import { AppContext } from "../../contexts/AppContext";
+
 function Footer() {
+
+    const appContext = useContext(AppContext)
+
+    const changeLanguage = (country) => {
+
+        appContext.setLanguage(country)
+
+    }
 
     return(
 
@@ -26,7 +41,7 @@ function Footer() {
 
                         <img src={Logo} alt="" className="footer-logo"/>
 
-                        <p className="grey-1-color">A escola que prepara você para as profissões em alta no mercado de trabalho.</p>
+                        <p className="grey-1-color">{appContext.languages[appContext.language].general.footerLogoText}</p>
 
                         <div className="d-flex social-links">
 
@@ -92,11 +107,15 @@ function Footer() {
 
                     <p className="grey-1-color">Copyright © DNC - 2024</p>
 
-                    <div>
+                    <div className="langs-area d-flex">
 
-                        <img src={BrazilIcon}/>
+                        <Button buttonStyle="unstyled" onClick={() => changeLanguage("br")}>
+                            <img src={BrazilIcon}/>
+                        </Button>
 
-                        <img src={UsaIcon}/>
+                        <Button buttonStyle="unstyled" onClick={() => changeLanguage("en")}>
+                            <img src={UsaIcon}/>
+                        </Button>
 
                     </div>
                 </div>
