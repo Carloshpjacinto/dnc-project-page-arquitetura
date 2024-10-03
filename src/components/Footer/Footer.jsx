@@ -75,23 +75,23 @@ function Footer() {
 
                         <div className="footer-col">
 
-                            <h3>Pages</h3>
+                            <h3>{appContext.languages[appContext.language].general.pages}</h3>
 
                             <ul>
 
-                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/">{appContext.languages[appContext.language].menu.home}</Link></li>
 
-                                <li><Link to="/about">About</Link></li>
+                                <li><Link to="/about">{appContext.languages[appContext.language].menu.about}</Link></li>
 
-                                <li><Link to="/project">Project</Link></li>
+                                <li><Link to="/project">{appContext.languages[appContext.language].menu.projects}</Link></li>
 
-                                <li><Link to="/contact">Contact</Link></li>
+                                <li><Link to="/contact">{appContext.languages[appContext.language].menu.contact}</Link></li>
 
                             </ul>
                         </div>
 
                         <div className="footer-col">
-                            <h3>Contact</h3>
+                            <h3></h3>
 
                             <p className="grey-1-color">R. Justino Cobra, 61 – Vila Ema | São José dos Campos – SP | CEP 12243-030 </p>
 

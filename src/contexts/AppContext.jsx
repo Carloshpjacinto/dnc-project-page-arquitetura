@@ -6,7 +6,7 @@ export const AppContext = createContext()
 export const AppProvider = ({children}) => {
 
     const [language, setLanguage] = useState("br")
-    const [languages, setLanguages] = useState()
+    const [languages, setLanguages] = useState({})
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
@@ -35,7 +35,7 @@ export const AppProvider = ({children}) => {
 
     return(
 
-        <AppContext.Provider value={{language, languages, setLanguage, loading}}>
+        <AppContext.Provider value={{ language, languages, setLanguage, loading }}>
             {children}
         </AppContext.Provider>
     )
