@@ -1,8 +1,20 @@
-# React + Vite
+# 📝 Projeto - Site de Arquitetura
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Site construido para descrição e apresentação de uma empresa de arquitetura.
+#### Link do Site para visualização: https://dnc-project-page-arquitetura.vercel.app/
+#### Projeto construido nas aulas da Matéria 4 - React e TypeScript do curso de Arquiteto de Software
 
-Currently, two official plugins are available:
+### *_Front-end_*
+<div>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="40" height="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="40" height="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="40" height="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="40" height="40"/>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### *_Back-end_*
+#### API REST:
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="40" height="40"/>
+
+### *_Software_*
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="40" height="40"/>
