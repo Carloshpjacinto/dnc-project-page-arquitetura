@@ -4,7 +4,7 @@ import React from "react";
 import Button from '../button/button'
 
 //CSS
-import './hero.css'
+import './Hero.css'
 
 //CONTEXT
 import { AppContext } from "../../contexts/AppContext"
